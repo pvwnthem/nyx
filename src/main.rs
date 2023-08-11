@@ -1,3 +1,8 @@
+use crossterm::terminal;
+
 fn main() {
-    println!("Hello, world!");
+    terminal::enable_raw_mode().expect("Could not enable Raw mode");
+
+    
+
 }
