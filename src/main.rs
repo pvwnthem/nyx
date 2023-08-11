@@ -1,8 +1,5 @@
-use crossterm::terminal;
-
+mod editor;
 fn main() {
-    terminal::enable_raw_mode().expect("Could not enable Raw mode");
-
-    
-
+    let mut editor: editor::Editor = editor::Editor::default();
+    editor.run();
 }
